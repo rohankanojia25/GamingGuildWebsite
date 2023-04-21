@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+/* home section starts */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,7,30,0.7),rgba(4,7,30,0.7)),url("home3.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    padding: 10px 40px 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 50px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: lightskyblue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.home-text{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.home-text h1{
+    text-shadow: rgb(33, 115, 148);
+    font-family: 'Bungee', cursive;
+    text-transform:uppercase;
+    font-size: 80px;
+}
+
+.home-text h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 10;
+    font-size: 35px;
+}
+
+.icons{
+    text-align: center;
+    padding: 50px 0 0 0 ; 
+}
+
+.icons i{
+    padding: 10px;
+    font-size: 30px;
+    position: relative;
+}
+
+.icons a{
+    color: white;
+}
+
+i:hover{
+    color: lightskyblue;
+}
+/* home sections ends */
+/* mission section starts */
+.mission{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding-top: 3%;
+    background-color: #04081a;
+    padding-bottom: 5%;
+}
+h4{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Bungee', cursive;
+    color: #fff;
+}
+#mission-p{
+    padding-bottom: 40px;
+}
+p{
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(223, 221, 221);
+    font-weight: 300;
+}
+.mission h3{
+    padding-top: 4%;
+    font-size: 32px;
+    font-family: 'Bungee', cursive;
+    color: #fff;
+}
+h3{
+    padding-top: 4%;
+    font-size: 35px;
+    font-family: 'Bungee', cursive;
+    color: #fff;
+}
+.mission-btn{
+    margin: auto;
+    width: 10%;
+    border: 1px solid skyblue;
+    top: 0;
+    left: 0;
+    position: relative;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+.mission-btn a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mission-btn p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #04081a;
+}
+
+/* Mission section ends */
+/* core section starts */
+.core{
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #191f3a;
+    transition: 0.6 1s;
+}
+
+.core-img{
+    padding-top: 2% ;
+    display: flex;
+}
+.core-img img{
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.col{
+    flex-basis: 60%;
+    justify-content: space-between;
+    padding: 60px 30px 40px 30px;
+    text-align: left;
+    background-color: #04081a;
+}
+
+#purple{
+    color: rgb(173, 56, 173);
+}
+#yellow{
+    color: yellow;
+}
+#blue{
+    color: aqua;
+}
+/* core section ends */
+/* our promise section starts */
+.promise{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    width: 100%;
+    margin: auto;
+    background-color: #191f3a;
+}
+.promise h3{
+    font-size: 35px;
+    font-family: 'Bungee', cursive;
+    color: #fff;
+    text-align: left;
+    margin: auto;
+    padding: 0px 755px 0px 425px;
+}
+.promise p{
+    padding-left: 100px;
+    padding-right: 30%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(223, 221, 221);
+    font-weight: 300;
+    text-align: center;
+}
+
+.row{
+    width: 98%;
+    margin: auto;
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    flex-basis: 30%;
+    padding: 10px 10px 10px 10px;
+    background-color: #04081a;
+}
+.column img{
+    padding-top: 5%;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.column-image img{
+    width: 500px;
+}
+.column h5{
+    font-size: 24px;
+    color: skyblue;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+.column p{
+    font-size: 16px;
+    color: aliceblue;
+    padding: 10px 10px 10px 10px;
+} 
+/* our promise section ends */
+
+/* Game Section Starts */
+.game-section{
+    width: 100%;
+    /* background-image: linear-gradient(rgba(4,7,30,0.7),rgba(4,7,30,0.7)),url("gamepage.jpg"); */
+    background-color: #04081a;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 2%;
+}
+.game-section h3{
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.row2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.column1 img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    opacity: 0.85;
+}
+.column1{
+    flex-basis: 30%;
+    position: relative;
+    padding: 0px 0px 50px;
+}
+
+.layer{
+    background: transparent;
+    height: 320px;
+    width: 320px;
+    top: 0;
+    left: 0;
+    position: absolute; 
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.layer h3{
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    font-size: 26px;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.layer:hover h3{
+    bottom: 55%;
+    opacity: 1;
+}
+
+.layer p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.layer:hover p{
+    bottom: 10%;
+    opacity: 1;
+}
+
+.membership-btn{
+    margin: auto;
+    width: 20%;
+    border: 1px solid skyblue;
+    top: 0;
+    left: 0;
+    position: relative;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+.membership-btn a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.membership-btn p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #04081a;
+}
+/* Game Section ends */
+/* Last section starts */
+.last-sec{
+    padding-top: 3%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,7,30,0.5),rgba(4,7,30,0.5)),url("home2.jpeg");
+    background-size: cover;
+    padding-bottom: 3%;
+    background-attachment: fixed;
+}
+.last-row{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-col1 img{
+    width: 350px;
+}
+
+.last-col2 img{
+    padding-top: 4%;
+    padding-bottom: 5%;
+    width: 550px;
+}
+.last-col1{
+    flex-basis: 30%;
+}
+.last-col2{
+    flex-basis: 30%;
+}
+/* last section ends */
+
+/* footer Section Starts */
+#flex{
+    display: flex;
+}
+.footer{
+    width: 100%;
+    background-color: #04081a;
+}
+.footer-text{
+    padding: 0px 0px 0px 50px;
+    width: 50%;
+}
+.footer-text p{
+    padding: 20px 0px 0px 0px;
+}
+.footer-icons{
+    width: 50%;
+    flex: 1;
+    text-align: right;
+    padding: 40px 50px 0 0 ; 
+}
+
+.footer-icons i{
+    padding: 10px;
+    font-size: 50px;
+    position: relative;
+}
+
+.footer-icons a{
+    color: white;
+}
+
+i:hover{
+    color: lightskyblue;
+}
+
+.copyright p{
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 30px 10px 20px 10px;
+    
+}
+.copyright p::before{
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: #191f3a;
+    display: block;
+    margin: 10px 10px 20px 150px;
+}
+/* footer Section ends */
